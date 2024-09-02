@@ -75,11 +75,22 @@ def display(filtered_df):
 def state_crime(data):
     st.title('Crime Distribution State/UT')
     df = data.groupby("STATE/UT")["Total Crimes"].sum().reset_index().sort_values(by="Total Crimes",ascending = False)
+    max = df.iloc[0]["STATE/UT"]
+    num = df.iloc[0]["Total Crimes"]
     fig_distribution = px.bar(df, x='Total Crimes', y='STATE/UT', title='Total Crimes by State/UT',color='STATE/UT')
+    #styling fig
+    fig_distribution.update_layout(
+    xaxis_title='Total Crimes',
+    yaxis_title='STATE/UT',
+    xaxis_title_font=dict(size=18, color='purple'),
+    yaxis_title_font=dict(size=18, color='purple'),
+    )
     st.plotly_chart(fig_distribution)
+    # Display the result
+    st.write(f"The {max} having maximum ({num}) number of crime")
 
 # will give district wise crime rate for each state
-def district_crime(data):
+def district_crime_type(data):
     st.title('Crime Distribution for District')
     df = data.sum().iloc[3:-3].reset_index()
     df.columns = ['Crime Type', 'Total']
@@ -92,8 +103,48 @@ def Crime_year(data):
     composition_data = data.sum().iloc[3:-3].reset_index()
     composition_data.columns = ['Crime Type', 'Total']
     fig_composition = px.pie(composition_data, names='Crime Type', values='Total', title=f'Crime distribution for Selected Period')
+    # styling chart
+    fig_composition.update_layout(
+    title_text='Enhanced Pie Chart',
+    title_font=dict(size=24, color='grey'),
+    legend_title='Crime Type',
+    legend=dict(title_font=dict(size=18, color='blue')))
     st.plotly_chart(fig_composition)
 
 
+# gives district wise (for particular state) specified crime type distribution
+def crime_type(data):
+    st.title("Crime Distribution for District")
+    df = data.groupby("District")["Total"].sum().reset_index().sort_values(by="Total", ascending=False)
+    fig_distribution = px.bar(df, x='Total', y='District', title='Total Crimes by District',color='District')
+    st.plotly_chart(fig_distribution)
+
+# gives district wise (for particular state) distribution for all crime type 
+def district_crime(data):
+    st.title("Total Number of Crimes for District")
+    df = data.groupby("DISTRICT")["Total Crimes"].sum().reset_index().sort_values(by="Total Crimes",ascending = False)
+    max = df.iloc[0]["DISTRICT"]
+    num = df.iloc[0]["Total Crimes"]
+    fig_distribution = px.bar(df, x='Total Crimes', y='DISTRICT', title='Total Crimes by District',color='DISTRICT')
+    #styling fig
+    fig_distribution.update_layout(
+    xaxis_title='Total Crimes',
+    yaxis_title='DISTRICT',
+    xaxis_title_font=dict(size=18, color='purple'),
+    yaxis_title_font=dict(size=18, color='purple'),
+    )
+    st.plotly_chart(fig_distribution)
+    # Display the result
+    st.write(f"The {max} having maximum ({num}) number of crime")
+
+
+# Crime trends over time
+def Year_crime(data):
+    st.title('Crime Trends Over Time')
+    fig_trend = px.line(data, x='Year', y='Total Crimes', title='Total Crimes Trend Over Years')
+    fig_trend.update_layout(xaxis=dict(showgrid=True, gridwidth=0.5, gridcolor='lightgray'),
+                            yaxis=dict(showgrid=True, gridwidth=0.5, gridcolor='lightgray'),
+                            paper_bgcolor='rgba(240, 240, 240, 0.8)')
+    st.plotly_chart(fig_trend)
 
 
