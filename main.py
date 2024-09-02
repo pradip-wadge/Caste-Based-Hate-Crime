@@ -7,7 +7,7 @@ import preprocessor
 st.set_page_config(layout="wide")
 
 # logo display
-st.sidebar.image("logo.jpg")
+st.sidebar.image("logo.png")
 
 # Load Crime data
 data = pd.read_csv("cleaned_data.csv")
