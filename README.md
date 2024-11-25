@@ -1,3 +1,7 @@
+<img src="Screenshot 2024-11-25 054811.png" alt="Credit Risk Dashboard" width="900">
+<img src="Screenshot 2024-11-25 054833.png" alt="Credit Risk Dashboard" width="900">
+<img src="Screenshot 2024-11-25 054843.png" alt="Credit Risk Dashboard" width="900">
+
 Caste-Based Hate Crime Analysis
 Overview
 Caste-based hate crimes remain a critical societal issue that demands attention and analysis. This project aims to explore trends, patterns, and insights into caste-based hate crimes using data analytics. By leveraging Python, Streamlit, and Jupyter Notebook, this project provides a comprehensive and interactive approach to understanding these crimes, enabling policymakers, researchers, and the public to address this pressing issue effectively.
