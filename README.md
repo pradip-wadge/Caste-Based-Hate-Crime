@@ -1,3 +1,5 @@
+[Download the Demo Video](1.mp4)
+
 <img src="Screenshot 2024-11-25 054811.png" alt="Credit Risk Dashboard" width="900">
 <img src="Screenshot 2024-11-25 054833.png" alt="Credit Risk Dashboard" width="900">
 <img src="Screenshot 2024-11-25 054843.png" alt="Credit Risk Dashboard" width="900">
