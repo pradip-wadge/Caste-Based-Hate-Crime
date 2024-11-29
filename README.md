@@ -1,6 +1,6 @@
 ## Catch our project presentation
-- Genomics Of Drug Sensitivity In Cancer : https://youtu.be/ZxJ36yWMhnY  
-Description: Helps researchers select an appropriate sensitive drug for a particular cancer type.
+Cast Based Hate Crime Analysis : https://www.youtube.com/watch?v=D5pjlydHlXk  
+Description: Guides government organizations take strict actions against crime based on a dynamic Streamlit application.
 <img src="Screenshot 2024-11-25 054811.png" alt="Credit Risk Dashboard" width="900">
 <img src="Screenshot 2024-11-25 054833.png" alt="Credit Risk Dashboard" width="900">
 <img src="Screenshot 2024-11-25 054843.png" alt="Credit Risk Dashboard" width="900">
