@@ -1,3 +1,6 @@
+## Catch our project presentation
+- Genomics Of Drug Sensitivity In Cancer : https://youtu.be/ZxJ36yWMhnY  
+Description: Helps researchers select an appropriate sensitive drug for a particular cancer type.
 <img src="Screenshot 2024-11-25 054811.png" alt="Credit Risk Dashboard" width="900">
 <img src="Screenshot 2024-11-25 054833.png" alt="Credit Risk Dashboard" width="900">
 <img src="Screenshot 2024-11-25 054843.png" alt="Credit Risk Dashboard" width="900">
