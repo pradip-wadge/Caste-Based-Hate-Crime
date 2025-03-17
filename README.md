@@ -1,5 +1,5 @@
 ## Catch project presentation
-Cast Based Hate Crime Analysis : https://youtu.be/lsQQ1MkNCSw  
+Cast Based Hate Crime Analysis : https://youtu.be/lsQQ1MkNCSw  1
 Description: Guides government organizations take strict actions against crime based on a dynamic Streamlit application.
 <img src="Screenshot 2024-11-25 054811.png" alt="Credit Risk Dashboard" width="900">
 <img src="Screenshot 2024-11-25 054833.png" alt="Credit Risk Dashboard" width="900">
